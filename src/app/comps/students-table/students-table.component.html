@@ -1,0 +1,22 @@
+<p>students-table works!</p>
+
+
+<button >BBQ</button>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ students.newStudent.Name }}</td>
+            <td>{{ students.newStudent.Age }}</td>
+        </tr>
+        <tr *ngFor="let x of students.students">
+            <td>{{ x.Name }}</td>
+            <td>{{ x.Age }}</td>
+        </tr>
+    </tbody>
+</table>

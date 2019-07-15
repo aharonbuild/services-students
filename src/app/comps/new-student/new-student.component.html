@@ -1,0 +1,12 @@
+<p>new-student works!</p>
+
+<label>name</label><input #name
+    (input)="svc.newStudent.Name = newStudent.Name = $event.target.value"/><br>
+<label>age</label><input type="number"  #age
+    (input)="svc.newStudent.Age = newStudent.Age = $event.target.value"/><br>
+
+<button (click)="saveStudent()">save</button>
+
+<div style="display: none" #gif>
+    <img src="assets/giphy.gif"/>
+</div>
